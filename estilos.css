@@ -1,26 +1,26 @@
 @font-face {
   font-family: Poppins-Regular;
-  src: url('fuentes/poppins/Poppins-Regular.ttf'); 
+  src: url('fuentes/poppins/Poppins-Regular.ttf');
 }
 
 @font-face {
   font-family: Poppins-Medium;
-  src: url('fuentes/poppins/Poppins-Medium.ttf'); 
+  src: url('fuentes/poppins/Poppins-Medium.ttf');
 }
 
 @font-face {
   font-family: Poppins-Bold;
-  src: url('fuentes/poppins/Poppins-Bold.ttf'); 
+  src: url('fuentes/poppins/Poppins-Bold.ttf');
 }
 
 @font-face {
   font-family: Poppins-SemiBold;
-  src: url('fuentes/poppins/Poppins-SemiBold.ttf'); 
+  src: url('fuentes/poppins/Poppins-SemiBold.ttf');
 }
 
 *{
-	margin: 0px; 
-	padding: 0px; 
+	margin: 0px;
+	padding: 0px;
 	box-sizing: border-box;
 }
 
@@ -48,7 +48,7 @@ button:hover {
 /*-- contenedor del Login--*/
 
 .container-login {
-  width: 100%;  
+  width: 100%;
   min-height: 100vh;
   display: -webkit-flex;
   display: flex;
@@ -56,8 +56,8 @@ button:hover {
   justify-content: center;
   align-items: center;
   padding: 15px;
-  background: -webkit-linear-gradient(to right, #00dbde, #fc00ff);
-  background: linear-gradient(to right, #00dbde, #fc00ff);
+  background: -webkit-linear-gradient(to right, #fcfcfb, #fc00ff);
+  background: linear-gradient(to right, #BDBDBD, #1C1C1C);
 }
 
 .wrap-login {
@@ -110,7 +110,7 @@ button:hover {
   padding: 0 5px;
 }
 
-/*---------------------------------------------*/ 
+/*---------------------------------------------*/
 .focus-efecto {
   position: absolute;
   display: block;
@@ -210,10 +210,10 @@ button:hover {
   width: 300%;
   height: 100%;
   background: #a64bf4;
-  background: -webkit-linear-gradient(right, #21d4fd, #b721ff, #21d4fd, #b721ff);
-  background: -o-linear-gradient(right, #21d4fd, #b721ff, #21d4fd, #b721ff);
-  background: -moz-linear-gradient(right, #21d4fd, #b721ff, #21d4fd, #b721ff);
-  background: linear-gradient(right, #21d4fd, #b721ff, #21d4fd, #b721ff);
+  background: -webkit-linear-gradient(right, #21d4fd, #1C1C1C, #A4A4A4, #1C1C1C);
+  background: -o-linear-gradient(right, #21d4fd, #1C1C1C, #A4A4A4, #b721ff);
+  background: -moz-linear-gradient(right, #21d4fd, #1C1C1C, #A4A4A4, #b721ff);
+  background: linear-gradient(right, #21d4fd, #1C1C1C, #A4A4A4, #b721ff);
   top: 0;
   left: -100%;
 
