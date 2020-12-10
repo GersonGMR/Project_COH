@@ -19,8 +19,11 @@
 
       <div class="container-login">
         <div class="wrap-login">
+            <img src="image/convoy-of-hope-logo.png" class="img-rounded" alt="Cinque Terre">
             <form class="login-form validate-form" id="formLogin" action="" method="post">
-                <span class="login-form-title">Inicio</span>
+                <span class="login-form-title"></span>
+                <br>
+                <br>
 
                 <div class="wrap-input100" data-validate = "Usuario incorrecto">
                     <input class="input100" type="text" id="usuario" name="usuario" placeholder="Usuario">
