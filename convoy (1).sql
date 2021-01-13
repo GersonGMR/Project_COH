@@ -192,9 +192,9 @@ CREATE TABLE `tablas` (
 
 CREATE TABLE `usuarios` (
   `usuario_id` int(11) NOT NULL,
-  `nombre_usuario` text NOT NULL,
+  `username` text NOT NULL,
   `correo_usuario` text NOT NULL,
-  `pwd_usuario` varchar(16) NOT NULL,
+  `password` varchar(16) NOT NULL,
   `rol_id` int(11) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
