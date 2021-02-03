@@ -1,4 +1,4 @@
-<?php 
+<?php
 require_once "../controlador/sessionValidate.php";
 require_once "../controlador/sessionUserTypeAdmin.php";
 ?>
@@ -7,7 +7,7 @@ require_once "../controlador/sessionUserTypeAdmin.php";
 <head>
     <meta charset="utf-8">
     <title>Usuarios</title>
-    <!--CSS-->    
+    <!--CSS-->
     <link rel="stylesheet" href="assets/css/bootstrap-yeti.css">
     <link rel="stylesheet" href="assets/css/dataTables.bootstrap.min.css">
     <link rel="stylesheet" href="assets/css/font-awesome.css">
@@ -23,20 +23,20 @@ require_once "../controlador/sessionUserTypeAdmin.php";
                 <a href="#" class="btn btn-info" onclick="loadUsers()"><i class="fa fa-refresh"></i>&nbsp;Refrescar</a>
             </div>
         </div>
-        <div class="row">            
-            <div id="mensaje-delete"></div>            
-            <h1>Usuarios                
+        <div class="row">
+            <div id="mensaje-delete"></div>
+            <h1>Usuarios
                 <a href="" data-toggle="modal" data-target="#myModal"  class="btn btn-success pull-right menu"><i class="fa fa-user-plus " aria-hidden="true"></i>&nbsp;Nuevo usuario</a>
-            </h1>  
+            </h1>
         </div>
-        <div class="row">    
+        <div class="row">
         <table id="example" class="table table-striped table-bordered table-responsive">
             <thead>
             <tr>
                 <th>Id</th>
                 <th>A. paterno</th>
                 <th>A. materno</th>
-                <th>Nombre</th>               
+                <th>Nombre</th>
                 <th>Usuario</th>
                 <th>Clave</th>
                 <th>Tipo de usuario</th>
@@ -52,7 +52,7 @@ require_once "../controlador/sessionUserTypeAdmin.php";
                 <th>Id</th>
                 <th>A. paterno</th>
                 <th>A. materno</th>
-                <th>Nombre</th>               
+                <th>Nombre</th>
                 <th>Usuario</th>
                 <th>Clave</th>
                 <th>Tipo de usuario</th>
@@ -61,7 +61,7 @@ require_once "../controlador/sessionUserTypeAdmin.php";
                 <th>Acciones</th>
             </tr>
             </tfoot>
-        </table>        
+        </table>
         </div>
     </div>
     <!-- END DATATABLE -->
@@ -76,9 +76,9 @@ require_once "../controlador/sessionUserTypeAdmin.php";
                 </div>
                 <div class="modal-body">
                     <div class="row-fluid" id="notificacion"></div>
-                    <form id="formregistro"> 
+                    <form id="formregistro">
                         <fieldset>
-                            <div class="form-group">                            
+                            <div class="form-group">
                                 <div class="col-lg-4">
                                     <div class="form-group" id="campoapaterno">
                                         <label class="control-label" for="apaterno">Apellido paterno</label>
@@ -108,34 +108,36 @@ require_once "../controlador/sessionUserTypeAdmin.php";
                                         <label class="control-label" for="clave">Clave de acceso</label>
                                         <input type="password" class="form-control" id="clave" name="clave">
                                     </div>
-                                </div> 
+                                </div>
                                 <div class="col-lg-6">
                                     <div class="form-group" id="campoTipo">
+                                      <label class="control-label" for="clave">Tipo de usuario</label>
                                         <select class="form-control" id="tipo" name="tipo">
                                             <option value="2">Cliente 1</option>
                                             <option value="3">Cliente 2</option>
-                                            <option value="1">Administrador</option>                                       
-                                        </select>                                    
+                                            <option value="1">Administrador</option>
+                                        </select>
                                     </div>
-                                </div> 
+                                </div>
                                 <div class="col-lg-6">
                                     <div class="form-group" id="campoStatus">
+                                      <label class="control-label" for="clave">Estado del usuario</label>
                                         <select class="form-control" id="status" name="status">
                                             <option value="1">Activo</option>
                                             <option value="0">Inactivo</option>
-                                        </select>                                    
-                                    </div>
-                                </div>                            
-                                <div class="col-lg-4 col-lg-offset-8">
-                                    <div class="form-group">
-                                         <button type="submit" class="btn btn-primary btn-block">Registrar</button>                                     
+                                        </select>
                                     </div>
                                 </div>
-                            </div>   
+                                <div class="col-lg-4 col-lg-offset-8">
+                                    <div class="form-group">
+                                         <button type="submit" class="btn btn-primary btn-block">Registrar</button>
+                                    </div>
+                                </div>
+                            </div>
                         </fieldset>
                     </form>
                 </div>
-                <div class="modal-footer">                
+                <div class="modal-footer">
                 </div>
             </div>
         </div>
@@ -163,10 +165,10 @@ require_once "../controlador/sessionUserTypeAdmin.php";
     </div>
     <!-- END MODAL UPDATE -->
 
-    <!--Javascript-->    
+    <!--Javascript-->
     <script src="assets/js/jquery.js"></script>
     <script src="assets/js/jquery.dataTables.min.js"></script>
-    <script src="assets/js/dataTables.bootstrap.min.js"></script>          
+    <script src="assets/js/dataTables.bootstrap.min.js"></script>
     <script src="assets/js/bootstrap.js"></script>
     <script src="assets/js/usuariojs.js"></script>
 </body>
