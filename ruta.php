@@ -1,5 +1,5 @@
 <?php
 class ruta {
-	const ruta="/login-mvc";
+	const ruta="/project_coh";
 }
 ?>
