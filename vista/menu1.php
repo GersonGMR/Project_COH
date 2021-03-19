@@ -93,9 +93,6 @@ require_once "../controlador/sessionUserTypeAdmin.php";
                             </li>
                         </ul>
                       </li>
-                  <li  >
-                        <a class="active-menu"  href="blank.html"><i class="fa fa-square-o fa-2x"></i> Pagina blanca</a>
-                    </li>
                 </ul>
 
             </div>
