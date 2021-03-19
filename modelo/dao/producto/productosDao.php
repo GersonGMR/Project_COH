@@ -108,7 +108,7 @@ class productoDao {
     }
 
     function saveDataProductoDao($id, $descripcion, $cantidad, $peso_producto, $vencimiento_producto, $presentacion_id, $contenedor_id) {
-      $st = "UPDATE productos SET descripcion='$descripcion', cantidad='$cantidad', peso_producto='$peso_producto', vencimiento_producto='$vencimiento_producto', presentacion_id='$presentacion_id', contenedor_id='$contenedor_id'";
+      $st = "UPDATE productos SET descripcion='$descripcion', cantidad='$cantidad', peso_producto='$peso_producto', vencimiento_producto='$vencimiento_producto', presentacion_id='$presentacion_id', contenedor_id='$contenedor_id' WHERE producto_id = '$id'";
       $query = $this->con->query($st);
       $result = Notification::updatedRecord($query);
       return $result;

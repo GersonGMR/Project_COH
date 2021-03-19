@@ -20,8 +20,8 @@ class productoBo {
         return $resultado;
     }
 
-    function actualizarProductoBo($descripcion) {
-        $resultado = $this->dao->actualizarProductoDao($descripcion);
+    function actualizarProductoBo($producto_id) {
+        $resultado = $this->dao->actualizarProductoDao($producto_id);
         return $resultado;
     }
 
