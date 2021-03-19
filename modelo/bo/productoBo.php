@@ -10,8 +10,8 @@ class productoBo {
         $this->dao=new productoDao();
     }
 
-    function registrarProductoBo($descripcion, $cantidad, $peso_producto, $vencimiento_producto, $presentacion, $contenedor) {
-        $resultado = $this->dao->registrarProductoBoDao($descripcion, $cantidad, $peso_producto, $vencimiento_producto, $presentacion, $contenedor);
+    function registrarProductoBo($descripcion, $cantidad, $peso_producto, $vencimiento_producto, $presentacion_id, $contenedor_id) {
+        $resultado = $this->dao->registrarProductoBoDao($descripcion, $cantidad, $peso_producto, $vencimiento_producto, $presentacion_id, $contenedor_id);
         return $resultado;
     }
 
@@ -25,8 +25,8 @@ class productoBo {
         return $resultado;
     }
 
-    function saveDataProductoBo($id, $descripcion, $cantidad, $peso_producto, $vencimiento_producto, $presentacion, $contenedor) {
-        $resultado = $this->dao->saveDataProductoBoDao($id, $descripcion, $cantidad, $peso_producto, $vencimiento_producto, $presentacion, $contenedor);
+    function saveDataProductoBo($id, $descripcion, $cantidad, $peso_producto, $vencimiento_producto, $presentacion_id, $contenedor_id) {
+        $resultado = $this->dao->saveDataProductoBoDao($id, $descripcion, $cantidad, $peso_producto, $vencimiento_producto, $presentacion_id, $contenedor_id);
         return $resultado;
     }
 

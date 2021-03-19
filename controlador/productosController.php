@@ -8,11 +8,11 @@ switch ($_POST['action']) {
     $cantidad  = $_POST['cantidad'];
     $peso_producto    = $_POST['peso_producto'];
     $vencimiento_producto   = $_POST['vencimiento_producto'];
-    $presentacion     = $_POST['presentacion'];
-    $contenedor      = $_POST['contenedor'];
+    $presentacion_id     = $_POST['presentacion_id'];
+    $contenedor_id      = $_POST['contenedor_id'];
 
     $bo = new productoBo();
-    $r = $bo->registrarProductoBo($descripcion, $cantidad, $peso_producto, $vencimiento_producto, $presentacion, $contenedor);
+    $r = $bo->registrarProductoBo($descripcion, $cantidad, $peso_producto, $vencimiento_producto, $presentacion_id, $contenedor_id);
     print $r;
     break;
 
@@ -30,11 +30,11 @@ switch ($_POST['action']) {
         $cantidad  = $_POST['c'];
         $peso_producto    = $_POST['d'];
         $vencimiento_producto   = $_POST['j'];
-        $presentacion     = $_POST['k'];
-        $contenedor      = $_POST['l'];
+        $presentacion_id     = $_POST['k'];
+        $contenedor_id      = $_POST['l'];
 
         $bo = new productoBo();
-        $r = $bo->saveDataProductoBo($id, $descripcion, $cantidad, $peso_producto, $vencimiento_producto, $presentacion, $contenedor);
+        $r = $bo->saveDataProductoBo($id, $descripcion, $cantidad, $peso_producto, $vencimiento_producto, $presentacion_id, $contenedor_id);
         print $r;
         break;
 

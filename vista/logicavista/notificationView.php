@@ -1,21 +1,21 @@
 <?php
 
-class Notification { 
+class Notification {
 
 	public function registeredRecord($result) {
 		if($result != false){
 		  $mensaje = '<div class="alert alert-dismissible alert-success">
 		              <button type="button" class="close" data-dismiss="alert">&times;</button>
 		              <strong>¡Ok!</strong> Registrado correctamente.
-		            </div>';         
+		            </div>';
 		} else {
 		  $mensaje = '<div class="alert alert-dismissible alert-warning">
 		              <button type="button" class="close" data-dismiss="alert">&times;</button>
 		              <strong>¡Error!</strong> Inténtalo de nuevo.
-		            </div>';                    
+		            </div>';
 		}
 		return $mensaje;
-	}   
+	}
 
 
     public function updatedRecord($result) {
@@ -23,12 +23,12 @@ class Notification {
     	  $mensaje = '<div class="alert alert-dismissible alert-info">
     	              <button type="button" class="close" data-dismiss="alert">&times;</button>
     	              <strong>¡Ok!</strong> Cambios guardados correctamente.
-    	            </div>';         
+    	            </div>';
     	} else {
     	  $mensaje = '<div class="alert alert-dismissible alert-warning">
     	              <button type="button" class="close" data-dismiss="alert">&times;</button>
     	              <strong>¡Error!</strong> Inténtalo de nuevo.
-    	            </div>';                    
+    	            </div>';
     	}
     	return $mensaje;
     }
@@ -38,16 +38,16 @@ class Notification {
 	        $mensaje = '<div class="alert alert-dismissible alert-success">
 	                    <button type="button" class="close" data-dismiss="alert">&times;</button>
 	                    <strong>¡Ok!</strong> Registro eliminado correctamente.
-	                  </div>';         
+	                  </div>';
      	 } else {
 	        $mensaje = '<div class="alert alert-dismissible alert-warning">
 	                    <button type="button" class="close" data-dismiss="alert">&times;</button>
 	                    <strong>¡Error!</strong> Inténtalo de nuevo.
-	                  </div>';                    
+	                  </div>';
       	}
       	return $mensaje;
-    }	
-    
+    }
+
     public function existsUser(){
     	$mensaje = '<div class="alert alert-dismissible alert-danger">
     	            <button type="button" class="close" data-dismiss="alert">&times;</button>

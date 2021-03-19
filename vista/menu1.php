@@ -44,7 +44,7 @@ require_once "../controlador/sessionUserTypeAdmin.php";
                         <img src="assets/img/th.jpg" class="user-image img-responsive"/>
                     </li>
                     <li>
-                        <a  href="#" onclick="loadUsers()"><i class="fa fa-dashboard fa-2x" ></i> Dashboard</a>
+                        <a  href="#" onclick="loadUsers()"><i class="fa fa-dashboard fa-2x" ></i> Usuarios</a>
                     </li>
                       <li>
                         <a  href="#"><i class="fa fa-desktop fa-2x"></i> Elementos </a>
