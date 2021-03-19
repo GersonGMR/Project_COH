@@ -17,10 +17,10 @@ switch ($_POST['action']) {
     break;
 
     case 'update':
-         $descripcion = $_POST['id'];
+         $producto_id = $_POST['id'];
 
          $bo = new productoBo();
-         $r = $bo->actualizarProductoBo($descripcion);
+         $r = $bo->actualizarProductoBo($producto_id);
          print $r;
          break;
 

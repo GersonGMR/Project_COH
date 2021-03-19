@@ -9,6 +9,7 @@ switch ($_GET['action']) {
 		$r = $bo->traeUsuariosBo();
 		print $r;
 		break;
+		
 	case "products":
 		$bo = new productoBo();
 		$r = $bo->traeProductosBo();

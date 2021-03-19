@@ -93,7 +93,7 @@ class productoDao {
 
       if($query->num_rows==0)
       {
-        $st = "INSERT INTO productos(descripcion, cantidad, peso_producto, vencimiento_producto, presentacion_id, contenedor, fRegistro)
+        $st = "INSERT INTO productos(descripcion, cantidad, peso_producto, vencimiento_producto, presentacion_id, contenedor_id, fRegistro)
         VALUES('$descripcion', '$cantidad', '$peso_producto', '$vencimiento_producto', '$presentacion_id', '$contenedor_id', NOW())";
 
         $query = $this->con->query($st);
@@ -136,10 +136,10 @@ class productoDao {
               "id":"'.$row['producto_id'].'",
               "descripcion":"'.$row['descripcion'].'",
               "cantidad":"'.$row['cantidad'].'",
-              "peso_producto":"'.$row['peso_producto'].'",
-              "vencimiento_producto":"'.$row['vencimiento_producto'].'",
-              "presentacion_id":"'.$row['presentacion_id'].'",
-              "contenedor_id":"'.$row['contenedor_id'].'",
+              "peso":"'.$row['peso_producto'].'",
+              "vencimiento":"'.$row['vencimiento_producto'].'",
+              "presentacion":"'.$row['presentacion_id'].'",
+              "contenedor":"'.$row['contenedor_id'].'",
               "fecha":"'.$row['fregistro'].'",
               "acciones":"'.$editar.$eliminar.'"
             },';
@@ -190,7 +190,7 @@ class productoDao {
                         <div class="form-group" id="campoPresentacion">
                             <select class="form-control" id="presentacion_id" name="k">
                                 <option selected value="'.$row['presentacion_id'].'">--Click para cambiar--</option>
-                                <option value="1">Presentacion 1</option>
+                                <option value="14">Presentacion 1</option>
                                 <option value="2">Presentacion 2</option>
                                 <option value="3">Presentacion 3</option>
                             </select>

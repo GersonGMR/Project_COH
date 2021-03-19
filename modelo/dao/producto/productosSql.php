@@ -15,7 +15,7 @@ class productosSql
 
     public static function validateIfExistsProduct()
     {
-        $query = "SELECT * FROM usuarios WHERE producto_id=?";
+        $query = "SELECT * FROM productos WHERE producto_id=?";
         return $query;
     }
 }

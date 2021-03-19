@@ -11,27 +11,27 @@ class productoBo {
     }
 
     function registrarProductoBo($descripcion, $cantidad, $peso_producto, $vencimiento_producto, $presentacion_id, $contenedor_id) {
-        $resultado = $this->dao->registrarProductoBoDao($descripcion, $cantidad, $peso_producto, $vencimiento_producto, $presentacion_id, $contenedor_id);
+        $resultado = $this->dao->registrarProductoDao($descripcion, $cantidad, $peso_producto, $vencimiento_producto, $presentacion_id, $contenedor_id);
         return $resultado;
     }
 
     function traeProductosBo(){
-        $resultado = $this->dao->traeProductosBosDao();
+        $resultado = $this->dao->traeProductosDao();
         return $resultado;
     }
 
     function actualizarProductoBo($descripcion) {
-        $resultado = $this->dao->actualizarProductoBoDao($descripcion);
+        $resultado = $this->dao->actualizarProductoDao($descripcion);
         return $resultado;
     }
 
     function saveDataProductoBo($id, $descripcion, $cantidad, $peso_producto, $vencimiento_producto, $presentacion_id, $contenedor_id) {
-        $resultado = $this->dao->saveDataProductoBoDao($id, $descripcion, $cantidad, $peso_producto, $vencimiento_producto, $presentacion_id, $contenedor_id);
+        $resultado = $this->dao->saveDataProductoDao($id, $descripcion, $cantidad, $peso_producto, $vencimiento_producto, $presentacion_id, $contenedor_id);
         return $resultado;
     }
 
     function eliminarProductoBo($descripcion) {
-        $resultado = $this->dao->eliminarProductoBoDao($descripcion);
+        $resultado = $this->dao->eliminarProductoDao($descripcion);
         return $resultado;
     }
 

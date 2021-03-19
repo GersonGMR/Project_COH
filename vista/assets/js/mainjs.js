@@ -12,10 +12,11 @@ function loadUsers() {
         $('#contenido').html(response);
         $('#contenido').fadeIn();
     });
+  }
 function loadProducts() {
     $('#contenido').html("");
     $.post("productos.php", function(response) {
         $('#contenido').html(response);
         $('#contenido').fadeIn();
     });
-}
+  }

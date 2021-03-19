@@ -76,7 +76,7 @@ function traeDatosProductoId(product) {
   });
 }
 
-function delUsuario(product) {
+function delProducto(product) {
     if(confirm('¿Seguro que desea eliminar este producto?')){
       $("#mensaje-delete").html("");
       var id    = product.id;

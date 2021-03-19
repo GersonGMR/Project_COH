@@ -98,14 +98,14 @@ require_once "../controlador/sessionUserTypeAdmin.php";
                                 <div class="col-lg-6">
                                     <div class="form-group" id="campovencimiento">
                                         <label class="control-label" for="vencimiento">Vencimiento</label>
-                                        <input type="text" class="form-control" id="vencimiento_producto" name="vencimiento">
+                                        <input type="text" class="form-control" id="vencimiento_producto" name="vencimiento_producto">
                                     </div>
                                 </div>
                                 <div class="col-lg-6">
                                     <div class="form-group" id="campoPresentacion">
                                       <label class="control-label" for="presentacion">Presentacion</label>
-                                        <select class="form-control" id="presentacion_id" name="presentacion">
-                                            <option value="1">Presentacion 1</option>
+                                        <select class="form-control" id="presentacion_id" name="presentacion_id">
+                                            <option value="14">Presentacion 1</option>
                                             <option value="2">Presentacion 2</option>
                                             <option value="3">Presentacion 3</option>
                                         </select>
